@@ -7,13 +7,13 @@ debería ser 5.Re-utilice el método esMultiplo
 implementado para el ejercicio anterior
 */
 function esMultiplo(numero1: number, numero2: number): boolean {
-  return numero2 % numero1 === 0;
+  return numero1 % numero2 === 0;
 }
 
 function cantidadDeDivisores(numero: number): number {
   let cantidad: number = 0;
   let divisor: number;
-  for (divisor = 0; divisor < numero; divisor++) {
+  for (divisor = 1; divisor <= numero; divisor++) {
     if (esMultiplo(numero, divisor)) {
       cantidad++;
     }
